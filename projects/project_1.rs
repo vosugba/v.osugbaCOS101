@@ -4,7 +4,7 @@ fn main (){
 	let n:f64 = 5.00;
 
 	//Amount
-	let a:f64 = p*(1.00 + (r/100.00).powf(n));
+	let a:f64 = p*((1.00 + (r/100.00)).powf(n));
 	println! ("Amount equals to {}",a);
 
 	//Compound interest 
