@@ -26,23 +26,27 @@ fn main(){
 
     let experience = input1
     .trim();
+
+    let experienced = experience == "y";
     
 
-    if experience == "y" && age >=40 {
-        println!("Congratulations your Incentive is 1,560,000 Naira");
-    }
-    else if experience == "y" && age <=39 {
-        println!("Congratulations your Incentive is 1,480,000 Naira");
-
-    }
-    else if experience == "y" && age <28 {
+    if experienced {
+        if age <28 {
         println!("Congratulations your Incentive is 1,300,000 Naira ");
+       }
+        else if age <=39 {
+        println!("Congratulations your Incentive is 1,480,000 Naira");
+       }
+        else if age >=40 {
+         println!("Congratulations your Incentive is 1,560,000 Naira");
+       }
+        
     }
-    else if experience == "n" {
+        else if experience == "n" {
         println!("Congratulations your Incentive is 100,000 Naira");
-    }
-    else {
-        println!("No Incentive");
-    }
-}
+      } 
+       else{
+            println!("No Incentive");
+       }
 
+}    
