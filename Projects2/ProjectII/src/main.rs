@@ -25,7 +25,7 @@ fn main(){
     .expect("Failed to read input");
 
     let experience = input1
-    .trim();
+    .trim().to_lowercase();
 
     let experienced = experience == "y";
     

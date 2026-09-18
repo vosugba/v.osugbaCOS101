@@ -60,6 +60,7 @@ fn main(){
         println!("Two distinct roots");
 
         println!("So the roots of the equations are {} and {}", roots, root2);
+        
     }
     else if d == 0.0{
         let roots:f64 = -b /2.0*a ;
