@@ -1,0 +1,1 @@
+C:\Users\vince\OneDrive\Documents\CS\ docs\COS101\ practical\v.osugbaCOS101\week6\parctice_2\target\debug\parctice_2.exe: C:\Users\vince\OneDrive\Documents\CS\ docs\COS101\ practical\v.osugbaCOS101\week6\parctice_2\src\main.rs
