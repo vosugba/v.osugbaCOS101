@@ -8,11 +8,12 @@ fn main (){
         let mut sum = 0.0; 
 	    sum += total;
 
+	}
+	
 	    println!("{}",sum);
     
         let average = sum / amount.len() as f64;
 
 	    println!("The average for the sales is {}", average );
-	}
 }
 
