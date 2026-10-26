@@ -1,10 +1,91 @@
+struct Laptops {
+    brand: String,
+    quantity: f64,
+    price: f64
+
+    }
+    impl Laptops{
+        fn total (&self)->f64 {
+            self.price*3.0
+        }
+    }
+    
+
+fn main () {
+
+   let hp = Laptops{
+    brand: String::from("Hp"),
+    quantity: 10.00,
+    price: 650_000.00
+   };
+
+   let ibm = Laptops{
+    brand: String::from("IBM"),
+    quantity: 6.00,
+    price: 755_000.00
+   };
+
+   let toshiba = Laptops{
+    brand: String::from("Toshiba"),
+    quantity: 10.00,
+    price: 550_000.00
+   };
+
+   let dell = Laptops{
+    brand: String::from("Dell"),
+    quantity: 4.00,
+    price: 850_000.00
+   };
+   
+  println!("{},{},{},{}", hp.total(),ibm.total(),toshiba.total(),dell.total());
+  println!("The total of 3 Hp Laptops {}",hp.total() );
+  println!("The total of 3 IBM Laptops {}",ibm.total() );
+  println!("The total of 3 Toshiba Laptops {}",toshiba.total() );
+  println!("The total of 3 Dell Laptops {}",dell.total() );
+ 
+
+  println!("The total sales made is {}",hp.total()+ibm.total()+toshiba.total()+dell.total() );
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Okay here is my thought process we make a struct (laptops), with brand, quantities and price, next we get the users info of what laptops they want to buy (question said 3 ill just try and make it so they could get multiple ), them make an impl to calculate the laptop price
 We could make it that the person could only order 3 laptops by making 3 input variables for the price then probable using the if statment 
 Or we find a way to store all the prices in a vector then using a for loop to sum it together and they will most likely be in a loop
 Then i will also be making a function to get the input because why not let me practice  
 To Avoid stress i left everything as a string object */
-
-fn input_laptop (kini: &str) -> String { 
+/*fn input_laptop (kini: &str) -> String { 
     println!("{}", kini );
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).expect("Failed");
@@ -120,5 +201,8 @@ loop {
    println!("The total price: {}",cart.total() ); // this then calls on the total function which basically makes a for loop that in in maakes an empty variable sum which is 0.0 then iterating all the values stored in the price vector it adds them to each other like i have been doing the only thing new here is the "self."
 
    
-}
+}*/
+
+// ERMMM So apprently i was corrected and got the idea wrong 
+
 
